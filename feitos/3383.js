@@ -1,6 +1,5 @@
-var a = require('fs').readFileSync('./dev/stdin.txt', 'utf8');
-var lines = a.split('\n');
-
+var input = require('fs').readFileSync('./dev/stdin.txt', 'utf8');
+var lines = input.split('\n');
 const pegarValores = (line) => line.split(" ").map(a => Number(a));
 
 const muralhas = lines.shift().split(" ")[1]
